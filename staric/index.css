@@ -337,6 +337,7 @@ a {
     padding: 4rem;
 }
 
+
 .d551412a1-wrap {
     display: flex;
     align-items: center;
@@ -684,4 +685,13 @@ a {
 .menunav>a{
     text-align: center;
     padding: .5rem;
+}
+
+@media (max-width: 992px) {
+    .d551412a1,.d551412a2,.d551412a3,.tongquan{
+        padding: 2rem;
+    }
+    .jhgjf{
+        font-size: .5rem !important;
+    }
 }
