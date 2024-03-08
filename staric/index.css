@@ -50,6 +50,12 @@ a {
     text-align: justify;
 }
 
+@media (max-width: 992px) {
+    .Title__main {
+        font-size:2rem;
+        text-transform: capitalize;
+    }
+}
 /* --------------------- */
 /* Banner */
 /* --------------------- */
@@ -337,16 +343,16 @@ a {
 }
 
 .d551412a1__left {
-    flex: 1;
+
 }
 
 .d551412a1__right {
-    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .d551412a1-right-slick {
     width: 50%;
@@ -354,6 +360,11 @@ a {
     margin: 0;
     padding: 2em 0 4em 0;
     position: relative;
+}
+@media (max-width: 992px) {
+    .d551412a1-right-slick{
+        width: 100% ;
+    }
 }
 
 .d551412a1-right-slick img {
@@ -374,14 +385,12 @@ a {
 }
 
 .d551412a2__left,.d551412a3__left {
-    flex: 1;
     display: flex;
     align-items: start;
     justify-content: start;
 }
 
 .d551412a2__right,.d551412a3__right {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -398,6 +407,16 @@ a {
 .d551412a3-left-img{
     display: flex;
     justify-content: center;
+}
+
+.d551412a2-left-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.d551412a2-left-img>img{
+    width: 90%;
 }
 
 .d551412a2-right__ctTi,.d551412a3-right__ctTi {
@@ -595,12 +614,13 @@ a {
 }
 
 .tongquan_wrap>div{
-    flex: 1;
+    
 }
 
 .tongquan_video{
     display: flex;
-
+    justify-content: center;
+    padding: .5rem 0;
 }
 
 .tongquan_image{
@@ -615,4 +635,53 @@ a {
 .tongquan_text>p{
     font-size: 1rem;
     text-align: justify;
+}
+
+@media (max-width: 500px) {
+    .dd{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.menu{
+    font-size: 2rem;
+}
+
+.Menu-nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 80%;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    z-index: 999;
+    transition: all .3s linear;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+}
+
+.logo-nav{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid #677284;
+}
+.logo-nav>img{
+    width: 50%;
+}
+.menunav{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+}
+
+.menunav>a{
+    text-align: center;
+    padding: .5rem;
 }

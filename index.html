@@ -20,13 +20,28 @@
 </head>
 
 <body>
-    <div class="loadweb">
+    <div class="Menu-nav" style="display: none;">
+        <div style="display: flex;justify-content: end;padding: .5rem; font-size: 1.5rem;">
+            <i class="bi bi-x-lg" onclick="X()"></i>
+        </div>
+        <div class="menunav">
+            <a class="home acc" href="#banner">Giới thiệu</a>
+            <a class="template" href="#d551412a1">Dự án</a>
+            <a class="template" href="#d551412a2">khóa học đã học</a>
+            <a class="create" href="#d551412a3">Kỹ năng</a>
+            <a class="contact" href="#tongquan">Tổng quát</a>
+        </div>
+    </div>
+    <div class="loadweb" >
         <div></div>
     </div>
     <div id="mainintro"></div>
     <main class="main-wrap">
         <section id="header1412a1">
             <div class="header1412a1">
+                <div class="menu" style="display: none;">
+                    <i class="bi bi-list"></i>
+                </div>
                 <div class="header1412a1-logo">
                     <img style="height: 100%;width: auto;" src="./staric/Image/Logo.png" alt="">
                 </div>
@@ -60,13 +75,14 @@
                             <a href="#d551412a2">Các khóa học đã làm</a>
                         </div>
                         <div id="slick__banner" class="row"></div>
+                        <p style="padding: .5rem 0; font-size: 1.1rem;">Học tất cả các khóa học sẽ có đủ các huy hiệu.</p>
                     </div>
                 </div>
             </section>
             <section id="d551412a1">
                 <div class="d551412a1">
-                    <div class="d551412a1-wrap">
-                        <div class="d551412a1__left">
+                    <div class="d551412a1-wrap row">
+                        <div class="d551412a1__left col-lg-6">
                             <div class="d551412a1-left-content">
                                 <p class="Title__non"> Dự án đã làm </p>
                                 <div class="Title__main"> Sản Phẩm Học Tập</div>
@@ -76,7 +92,7 @@
                                 <div class="Content__main"> Các dự án làm tại AI Robotic </div>
                             </div>
                         </div>
-                        <div class="d551412a1__right">
+                        <div class="d551412a1__right col-lg-6">
                             <div class="d551412a1-right-slick row">
                             </div>
                         </div>
@@ -85,14 +101,14 @@
             </section>
             <section id="d551412a2">
                 <div class="d551412a2">
-                    <div class="d551412a2-wrap">
-                        <div class="d551412a2__left">
+                    <div class="d551412a2-wrap row">
+                        <div class="d551412a2__left col-lg-6">
                             <div class="d551412a2-left-img">
                                 <img src="https://i.pinimg.com/736x/5d/5e/52/5d5e52a693fe1c6cd9401f726e4dd644.jpg"
                                     alt="">
                             </div>
                         </div>
-                        <div class="d551412a2__right">
+                        <div class="d551412a2__right col-lg-6">
                             <div class="d551412a2-right-wrap">
                                 <div class="Title__main"> Khóa học đã học</div>
                                 <div class="d551412a2-right__content" style="padding: 1rem 0;"></div>
@@ -103,14 +119,14 @@
             </section>
             <section id="d551412a3" style="border-bottom: 1px solid rgb(216, 216, 216);border-top: unset;">
                 <div class="d551412a3">
-                    <div class="d551412a3-wrap">
-                        <div class="d551412a3__left">
+                    <div class="d551412a3-wrap row">
+                        <div class="d551412a3__left col-lg-6">
                             <div class="d551412a3-right-wrap">
                                 <div class="Title__main"> Kĩ năng cá nhân</div>
                                 <div class="d551412a3-right__content" style="padding: 1rem 0;"></div>
                             </div>
                         </div>
-                        <div class="d551412a3__right">
+                        <div class="d551412a3__right col-lg-6" >
                             <div class="d551412a3-left-img">
                                 <img src="./staric/Image/Profiling-amico.png" class="indetro">
                             </div>
@@ -119,12 +135,12 @@
                 </div>
             </section>
             <section class="tongquan" id="tongquan">
-                <div class="tongquan_wrap">
-                    <div class="tongquan_video">
+                <div class="tongquan_wrap row">
+                    <div class="tongquan_video col-lg-6">
                         <iframe src="https://drive.google.com/file/d/1JilmliPRPdn1SrpJM8PGqub2P2Ozw_2L/preview"
                             style="width: 90%; height: auto;aspect-ratio: 16/9;" allow="autoplay"></iframe>
                     </div>
-                    <div class="tongquan_content">
+                    <div class="tongquan_content col-lg-6">
                         <div class="tongquan_text">
                             <h1 class="Title__main" style="color: var(--color-text);font-weight: 400;">Báo cáo tổng quát
                             </h1>
@@ -158,11 +174,11 @@
                 <div class="ft1412c1">
                     <div class="ft1412c1-wrap">
                         <div class="ft1412c1-dot"></div>
-                        <div class="ft1412c1-content">
-                            <div class="ft1412c1-text">
+                        <div class="ft1412c1-content row">
+                            <div class="ft1412c1-text col-lg-6 dd">
                                 <p>© Product created by T&A Lab</p>
                             </div>
-                            <div class="ft1412c1-icon" >
+                            <div class="ft1412c1-icon col-lg-6 dd" >
                                 <p style="margin-right: 1rem;">Theo dõi: </p>
                                 <a href="https://www.facebook.com/profile.php?id=100071172378187" target="_blank">
                                     <i class="bi bi-facebook"></i>

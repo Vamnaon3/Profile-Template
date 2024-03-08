@@ -73,7 +73,8 @@ fetchSheet
 
 if (w <= 700) {
     vam('#banner').style.aspectRatio = "1182/2560";
-    vam('.banner__background>img').src = "./staric/Image/banner-sm.jpg"
+    vam('.banner__background>img').src = "./staric/Image/banner-sm.jpg";
+    vam('.menu').setAttribute('style', 'display:block')
 }
 
 $('.d551412a2-right__ctTi').on('mousedown', e => {
@@ -241,7 +242,7 @@ fetchSheet
             /* xổ xuống */
             document.querySelector(`.main-content3[index='${f}'] .d551412a3-right__ctTi`).onclick = () => {
                 let i = vam(`.main-content3[index='${f}']`).getAttribute('id')
-                if (vam(`.main-content3[index='${f}'] .d551412a3-right__ctall`).getAttribute('class') == 'd551412a3-right__ctall hide') {}
+                if (vam(`.main-content3[index='${f}'] .d551412a3-right__ctall`).getAttribute('class') == 'd551412a3-right__ctall hide') { }
                 else {
                     vams(`.d551412a3-right__ctall.hide`).forEach((t) => {
                         t.classList.remove('hide')
@@ -252,11 +253,11 @@ fetchSheet
                 }
                 $(`.main-content3[index='${f}'] .d551412a3-right__ctall`).toggleClass('hide')
                 $(`.main-content3[index='${f}'] .d54svg`).toggleClass('hiden')
-                vams('.d551412a3-left-img>img').forEach((t)=>{
-                    t.setAttribute('style','display:none')
+                vams('.d551412a3-left-img>img').forEach((t) => {
+                    t.setAttribute('style', 'display:none')
                 })
-                vam(`.d551412a3-left-img>img[index="${i}"]`).setAttribute('style','display:block')
-                
+                vam(`.d551412a3-left-img>img[index="${i}"]`).setAttribute('style', 'display:block')
+
             }
         })
 
@@ -315,3 +316,14 @@ fetchSheet
             ],
         });
     });
+
+vam('.menu').onclick = () => {
+    vam('.Menu-nav').setAttribute('style', 'display:flex')
+}
+vam('.bg').onclick = () => {
+    vam('.Menu-nav').setAttribute('style', 'display:none')
+}
+
+function X() {
+    vam('.Menu-nav').setAttribute('style', 'display:none')
+}
