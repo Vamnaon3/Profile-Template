@@ -61,9 +61,9 @@ fetchSheet
             slidesToScroll: 1,
             arrows: true,
             pauseOnHover: false,
-            prevArrow: `<span class="prev"><svg style="transform: scale(-1);" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            prevArrow: `<span class="prev"><svg style="transform: scale(-1);" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
     <path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg></span>`,
-            nextArrow: `<span class="next"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            nextArrow: `<span class="next"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
     <path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg></span></span>`,
         });
     });
@@ -298,8 +298,8 @@ fetchSheet
             dots: true,
             infinite: true,
             speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToShow: 5,
+            slidesToScroll: 5,
             arrows: true,
             pauseOnHover: false,
             prevArrow: `<span class="prev"><svg style="transform: scale(-1);" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
